@@ -5,6 +5,9 @@ from langchain.chat_models import ChatOpenAI
 import streamlit as st
 import pandas as pd
 import os
+from chart_func import ask_agent, decode_response
+
+
 
 file_formats = {
     "csv": pd.read_csv,
